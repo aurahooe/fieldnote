@@ -1,9 +1,5 @@
 # Fieldnote
 
-A small public wall that turns over every hour.
+A living public wall. Notes you mark public appear for everyone. Private notes stay at your desk. The headline turns over with the clock.
 
-Live source: `index.html` + `styles.css` + `app.js`.
-Auth and storage: Supabase.
-
-Enable GitHub Pages on this repo (Settings → Pages → Deploy from branch `main`, folder `/`).
-Then add that Pages URL to Supabase Auth redirect URLs.
+Live: https://aurahooe.github.io/fieldnote/

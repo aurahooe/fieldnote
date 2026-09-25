@@ -13,6 +13,7 @@
 <body>
   <div class="grain" aria-hidden="true"></div>
   <div class="bloom" aria-hidden="true"></div>
+  <div id="cursor" class="cursor" aria-hidden="true"></div>
   <header class="mast">
     <a class="mark" href="#wall"><span class="mark-dot"></span>Fieldnote</a>
     <nav class="nav">
@@ -47,6 +48,7 @@
       <div class="panel-head">
         <h2>Public wall</h2>
         <p>Only notes marked public live here. Private ones stay at your desk.</p>
+        <input id="wallSearch" class="search" type="search" placeholder="Search the wall…" />
       </div>
       <div id="wallGrid" class="grid"></div>
     </section>
@@ -66,7 +68,7 @@
     <section id="hours" class="panel">
       <div class="panel-head">
         <h2>Past hours</h2>
-        <p>Each hour stamps a headline when someone is in the room.</p>
+        <p>Each hour stamps a headline when someone is in the room. New craft lands on the hour.</p>
       </div>
       <ol id="hourList" class="hour-list"></ol>
     </section>
@@ -85,7 +87,10 @@
       <p id="authMsg" class="msg"></p>
     </div>
   </div>
-  <footer><span>Fieldnote</span><span>The wall turns with the clock, not with a feed.</span></footer>
+  <footer>
+    <span>Fieldnote</span>
+    <span>The wall turns with the clock, not with a feed.</span>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="./app.js"></script>
 </body>
